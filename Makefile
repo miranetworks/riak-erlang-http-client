@@ -1,6 +1,6 @@
 .PHONY: rel deps doc
 
-all: deps
+all: deps app
 	@./rebar compile
 
 deps:
@@ -8,6 +8,8 @@ deps:
 
 clean:
 	@./rebar clean
+
+app: deps ./ebin/riakhttpc.app
 
 distclean: clean
 	@./rebar delete-deps

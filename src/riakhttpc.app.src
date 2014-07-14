@@ -1,0 +1,22 @@
+{application, riakhttpc,
+
+    [
+
+    {description, "riakhttpc"},
+
+    {vsn, "0.0.1"},
+
+    {id, "riakhttpc"},
+
+    {modules,   [
+
+                ]
+    },
+
+    {registered, []},
+
+    {applications, [kernel, stdlib]}
+
+    ]
+
+}.
