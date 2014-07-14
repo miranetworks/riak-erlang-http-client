@@ -1,4 +1,7 @@
-.PHONY: rel deps doc
+.PHONY: all app rel deps doc 
+
+./ebin/riakhttpc.app: src/*/*.erl include/*.hrl
+	./rebar compile
 
 all: deps app
 	@./rebar compile
